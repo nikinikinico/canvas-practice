@@ -27,6 +27,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  server: {
+    host: '0.0.0.0', // 监听所有网络接口
+    port: 5173,      // 指定端口号（默认是 5173，可以根据需要修改）
+  },
 
 })
